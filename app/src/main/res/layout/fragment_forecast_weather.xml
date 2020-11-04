@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background_1"
+    tools:context=".view.fragments.ForecastedWeather_Fragment">
+
+    <TextView
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/detailsFWtv"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="5 day / 3 hour forecast"/>
+
+    <TextView
+        android:id="@+id/cityFTV"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/detailsFWtv"
+        android:text="Navsari"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:textColor="@color/white"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="5dp"
+        android:layout_below="@id/cityFTV"
+        android:id="@+id/weatherListRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

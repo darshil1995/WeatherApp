@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_close_black_24dp"
+            android:layout_alignParentLeft="true" />
+
+        <!-- Library
+        https://github.com/markzhai/RememberEditText -->
+        <EditText
+            android:id="@+id/serachInput"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/backButton"
+            android:hint="Search by city"
+            android:inputType="textCapWords"
+            android:layout_toRightOf="@+id/backButton" />
+
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+
+</RelativeLayout>
